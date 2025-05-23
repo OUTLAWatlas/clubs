@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLSC | VIT Pune</title>
+  <script defer src="firefly1.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('mlsc.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #0078d7, #00bfff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideInDown 1.2s ease-out;
+    }
+
+    .hero-content h3 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    .button-group {
+      margin-top: 30px;
+    }
+
+    .explore-btn {
+      padding: 15px 30px;
+      background: #0078d7;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0, 120, 215, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .explore-btn:hover {
+      background: #005ea6;
+      box-shadow: 0 0 15px rgba(0, 120, 215, 0.8);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInDown {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .explore-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>MLSC</h1>
+      <h3>Microsoft Learn Student Club | VIT Pune 🔵</h3>
+      <p>
+        MLSC VIT Pune is a student-run community functioning under the wing of the Microsoft Student Ambassador Program. 💼<br><br>
+        Focused on empowering students through hands-on experiences, workshops, and collaborative learning, we bring tech enthusiasts together to innovate and grow! 🚀<br><br>
+        Join us and be a part of the future of tech. 💡
+      </p>
+      <div class="button-group">
+        <a href="clubs.html" class="explore-btn">⬅ Back to All Clubs</a>
+      </div>
+    </div>
+  </section>
+   <div class="committee">
+  <h4>Committee</h4>
+  <ul>
+    <li>President: Ramesh</li>
+    <li>Vice President: Suresh</li>
+  </ul>
+</div>
+
+<div class="stories">
+  <h4>Success Stories</h4>
+  <p>CSI hosted a successful webinar in Jan 2024!</p>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

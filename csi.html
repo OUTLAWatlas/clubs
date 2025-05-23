@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSI | VIT Pune</title>
+  <script defer src="firefly1.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('csi.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      z-index: 0;
+    }
+
+    .firefly-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; /* Between overlay and content */
+      pointer-events: none;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 750px;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideInDown 1.2s ease-out;
+    }
+
+    .hero-content h3 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .hero-content p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #dddddd;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(255, 110, 196, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #5a54e9;
+      box-shadow: 0 0 25px rgba(255, 110, 196, 0.6);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInDown {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="firefly-container" id="firefly-container"></div>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Computer Society of India</h1>
+      <h3>CSI Student Chapter, VIT Pune</h3>
+      <p>
+        We’re a vibrant community of passionate learners and tech enthusiasts at VIT Pune.<br><br>
+        The CSI chapter brings together curious minds to share ideas, collaborate on projects, and enhance both technical and soft skills.<br><br>
+        Whether you're into coding, innovation, or simply wish to grow with your peers — we've got a space for you!<br><br>
+        Join us to explore more, stay curious, and keep learning. ✨
+      </p>
+      <a href="clubs.html" class="btn">⬅ Back to All Clubs</a>
+    </div>
+  </section>
+  <div class="committee">
+  <h4>Committee</h4>
+  <ul>
+    <li>President: Ramesh</li>
+    <li>Vice President: Suresh</li>
+  </ul>
+</div>
+
+<div class="stories">
+  <h4>Success Stories</h4>
+  <p>CSI hosted a successful webinar in Jan 2024!</p>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

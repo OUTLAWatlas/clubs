@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIT Pune Clubs</title>
+  <script defer src="firefly1.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff6ec4;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+   .club-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 400px) {
+  .club-grid {
+    grid-template-columns: 1fr; /* stack in one column on very small screens */
+  }
+}
+
+
+    .club-card {
+      background: #1e1e1e;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 110, 196, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .club-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(255, 110, 196, 0.2);
+    }
+
+    .club-card h3 {
+      color: #ff6ec4;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .club-card p {
+      color: #ccc;
+    }
+
+    .explore-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 15px 30px;
+      background: #7873f5;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(120, 115, 245, 0.5);
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+
+    .explore-btn:hover {
+      background: #5a54e9;
+      box-shadow: 0 0 15px rgba(120, 115, 245, 0.8);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .explore-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore the World of VIT Clubs</h1>
+    <p>With over 52 active clubs, VIT Pune offers something for everyone.</p>
+  </header>
+
+  <div class="club-grid">
+    <div class="club-card">
+      <h3>Technical Clubs</h3>
+      <p>
+        These clubs are dedicated to sharpening your technical skills through coding, robotics, artificial intelligence, and electronics. They organize workshops, hackathons, and hands-on projects that fuel innovation.
+      </p>
+    </div>
+
+    <div class="club-card">
+      <h3>Entertainment Clubs</h3>
+      <p>
+        Focused on creativity and performance, these clubs bring dance, drama, music, and fine arts to life. They add rhythm, color, and fun to campus through regular performances and cultural festivals.
+      </p>
+    </div>
+
+    <div class="club-card">
+      <h3>Speaker-Centric Clubs</h3>
+      <p>
+        These clubs provide a platform to express, debate, and inspire. Whether it’s public speaking, poetry, Model United Nations, or storytelling, they help develop communication and leadership skills.
+      </p>
+    </div>
+
+    <div class="club-card">
+      <h3>Flagship Event Clubs</h3>
+      <p>
+        These are the teams behind some of the college’s biggest festivals and initiatives. From planning and management to execution, these clubs handle large-scale events that bring the whole institute together.
+      </p>
+    </div>
+  </div>
+
+  <a href="clubs.html" class="explore-btn">Explore Clubs 🎉</a>
+
+</body>
+</html>
+

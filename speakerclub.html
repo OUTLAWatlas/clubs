@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speakers' Club | VIT Pune</title>
+  <script defer src="firefly1.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin-top: 60px;
+      padding: 40px;
+      background: #1a1a1a;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 110, 196, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: #dddddd;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 0 15px rgba(255, 110, 196, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255, 110, 196, 0.5);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Speakers' Club</h1>
+    <h3>The Official Public Speaking Club | VIT Pune</h3>
+    <p>
+      The Speakers' Club is where voices rise, ideas shine, and confidence blooms. 🌟<br><br>
+      We host dynamic debates, thought-provoking discussions, and workshops to develop enriching communication skills.<br><br>
+      Join us to amplify your voice and grow with a vibrant community of speakers and leaders!
+    </p>
+    <a href="clubs.html" class="btn">⬅ Back to All Clubs</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aaroh | VIT Pune</title>
+  <script defer src="firefly1.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin-top: 60px;
+      padding: 40px;
+      background: #1a1a1a;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 110, 196, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: #dddddd;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 0 15px rgba(255, 110, 196, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255, 110, 196, 0.5);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+    .committee, .stories {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgba(255, 110, 196, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.committee h4, .stories h4 {
+  font-size: 1.5rem;
+  color: #ff6ec4;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.committee ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.committee li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.stories p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(255, 110, 196, 0.1);
+}
+
+/* Story form styling */
+.stories textarea {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  resize: vertical;
+  box-shadow: inset 0 0 5px rgba(255, 110, 196, 0.15);
+}
+
+.stories button {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stories button:hover {
+  background: #5a54e9;
+  box-shadow: 0 0 10px rgba(120, 115, 245, 0.6);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Aaroh</h1>
+    <h3>VIT Pune's Official Music Club</h3>
+    <p>
+      Aaroh is where rhythm meets passion and music becomes a shared language. 🎶<br><br>
+      Whether you're a vocalist, instrumentalist, or just love grooving to good tunes — we are your tribe!<br>
+      With Aaroh, the music doesn’t just play, it connects, heals, and unites. Join us in making melodies and memories! 🎵✨
+    </p>
+    <a href="clubs.html" class="btn">⬅ Back to All Clubs</a>
+  </div>
+    <div class="committee">
+  <h4>Committee</h4>
+  <ul>
+    <li>President: Ramesh</li>
+    <li>Vice President: Suresh</li>
+  </ul>
+</div>
+
+<div class="stories">
+  <h4>Success Stories</h4>
+  <p>CSI hosted a successful webinar in Jan 2024!</p>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

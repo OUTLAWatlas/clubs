@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EPEC | VIT Pune</title>
+  <script defer src="firefly1.js" ></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin-top: 60px;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 165, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 30px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #ffb347, #ffcc33);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: #dddddd;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #ffb347, #ffcc33);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255, 165, 0, 0.5);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .logo {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="epec-logo.png" alt="EPEC Logo" class="logo">
+    <h1>VIT Pune EPEC</h1>
+    <h3>Event Planning & Execution Committee | Student Council</h3>
+    <p>
+      EPEC is the backbone of flagship event management at VIT Pune — turning ideas into grand experiences.<br><br>
+      From conceptualization to execution, we create unforgettable moments that define campus life. 💫<br><br>
+      Be part of Team EPEC and help shape the events that become lifelong memories.
+    </p>
+    <a href="clubs.html" class="btn">⬅ Back to All Clubs</a>
+  </div>
+    <div class="committee">
+  <h4>Committee</h4>
+  <ul>
+    <li>President: Ramesh</li>
+    <li>Vice President: Suresh</li>
+  </ul>
+</div>
+
+<div class="stories">
+  <h4>Success Stories</h4>
+  <p>CSI hosted a successful webinar in Jan 2024!</p>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
+
