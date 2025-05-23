@@ -6,124 +6,166 @@
   <title>CSI | VIT Pune</title>
   <script defer src="firefly1.js"></script>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      overflow: hidden;
-    }
-
-    .hero {
-      position: relative;
-      height: 100vh;
-      background: url('csi.png') center/cover no-repeat;
+      background-color: #0d0d0d;
+      color: #ffffff;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin-top: 60px;
+      padding: 40px;
+      background: #1a1a1a;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 110, 196, 0.2);
       text-align: center;
-      color: #fff;
-      z-index: 0;
+      animation: fadeIn 1s ease;
     }
 
-    .firefly-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2; /* Between overlay and content */
-      pointer-events: none;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 3;
-      max-width: 750px;
-      padding: 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    .hero-content h1 {
-      font-size: 3.5rem;
-      margin-bottom: 15px;
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
       background: linear-gradient(45deg, #ff6ec4, #7873f5);
-      background-clip: text;
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: slideInDown 1.2s ease-out;
     }
 
-    .hero-content h3 {
+    h3 {
       font-weight: 300;
       font-size: 1.2rem;
       color: #ccc;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
-    .hero-content p {
-      font-size: 1.15rem;
+    p {
+      font-size: 1.1rem;
       line-height: 1.6;
-      color: #dddddd;
       margin-bottom: 40px;
+      color: #dddddd;
     }
 
     .btn {
-      padding: 14px 30px;
-      background: linear-gradient(45deg, #ff6ec4, #7873f5);
-      color: white;
-      font-size: 18px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 0 15px rgba(255, 110, 196, 0.4);
+      color: #fff;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 0 15px rgba(255, 110, 196, 0.3);
       transition: all 0.3s ease;
     }
 
     .btn:hover {
-      background: #5a54e9;
-      box-shadow: 0 0 25px rgba(255, 110, 196, 0.6);
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255, 110, 196, 0.5);
     }
 
     @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    @keyframes slideInDown {
-      0% { transform: translateY(-50px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.2rem;
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
       }
 
-      .hero-content p {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
         font-size: 1rem;
       }
-
-      .btn {
-        padding: 12px 24px;
-        font-size: 16px;
-      }
     }
+    .committee, .stories {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgba(255, 110, 196, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.committee h4, .stories h4 {
+  font-size: 1.5rem;
+  color: #ff6ec4;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.committee ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.committee li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.stories p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(255, 110, 196, 0.1);
+}
+
+/* Story form styling */
+.stories textarea {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  resize: vertical;
+  box-shadow: inset 0 0 5px rgba(255, 110, 196, 0.15);
+}
+
+.stories button {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stories button:hover {
+  background: #5a54e9;
+  box-shadow: 0 0 10px rgba(120, 115, 245, 0.6);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
   </style>
 </head>
 <body>
