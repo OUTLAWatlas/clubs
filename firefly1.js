@@ -1,3 +1,4 @@
+//Frontend UI Design
 (function () {
   // Wait for full DOM readiness
   function onReady(callback) {
